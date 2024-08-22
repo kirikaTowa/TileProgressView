@@ -28,7 +28,11 @@ class TiledProgressView @JvmOverloads constructor(
     private var backgroundProgressRadius: Float = 0f
 
     private val backgroundProgressPaint: Paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = ContextCompat.getColor(context, R.color.white)
+        color = ContextCompat.getColor(context, R.color.color_bg_tile_progress)
+    }
+
+    private val foregroundProgressPaint: Paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        color = ContextCompat.getColor(context, R.color.color_fg_tile_progress)
     }
 
     /**
@@ -42,9 +46,7 @@ class TiledProgressView @JvmOverloads constructor(
 
     private var foregroundProgressRadius = 0f
 
-    private val foregroundProgressPaint: Paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = ContextCompat.getColor(context, R.color.purple)
-    }
+
 
     private var borderWidth = resources.getDimension(R.dimen.progress_border)
 

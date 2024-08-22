@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<TiledProgressView>(R.id.tileProgressView).setProgress(6f)
+        //findViewById<TiledProgressView>(R.id.tileProgressView).setColor(getColor(R.color.purple_new))
     }
 }
